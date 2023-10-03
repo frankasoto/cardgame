@@ -1,0 +1,16 @@
+INSERT INTO schools (school_name) VALUES
+  ('School A'),
+  ('School B'),
+  ('School C');
+
+INSERT INTO characters (school_id, character_name) VALUES
+  (1, 'Character 1'),
+  (1, 'Character 2'),
+  (2, 'Character 3'),
+  (3, 'Character 4');
+
+INSERT INTO cards (school_id, card_name, element, description, damage, guardUP, isChase, effect, used_by, image_link) VALUES
+  (1, 'Card 1', 'Fire', 'Description for Card 1', 50, TRUE, TRUE, 'Effect 1', 'Character 1', 'image1.jpg'),
+  (1, 'Card 2', 'Water', 'Description for Card 2', 40, FALSE, FALSE, 'Effect 2', 'Character 2', 'image2.jpg'),
+  (2, 'Card 3', 'Earth', 'Description for Card 3', 60, TRUE, FALSE, 'Effect 3', 'Character 3', 'image3.jpg'),
+  (3, 'Card 4', 'Air', 'Description for Card 4', 45, FALSE, TRUE, 'Effect 4', 'Character 4', 'image4.jpg');
